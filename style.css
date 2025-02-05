@@ -1,95 +1,109 @@
+/* Importa a fonte "Outfit" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Configuração global para todos os elementos */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
+    margin: 0;  /* Remove a margem padrão */
+    padding: 0; /* Remove o espaçamento interno padrão */
+    box-sizing: border-box; /* Garante que a largura e altura incluam padding e borda */
+    font-family: 'Outfit', sans-serif; /* Aplica a fonte "Outfit" ao site */
 }
 
+/* Estilização do corpo da página */
 body{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/fundohq.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;  /* O corpo ocupará 100% da largura da tela */
+    height: 100vh; /* O corpo ocupará 100% da altura da tela visível */
+    background-image: url(images/fundohq.jpg); /* Define uma imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do body */
+    display: flex; /* Usa flexbox para alinhar os elementos */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
 }
 
+/* Container principal */
 .container{
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 6%;
+    max-width: 1280px; /* Define um tamanho máximo para o container */
+    margin: 0 auto; /* Centraliza o container na tela */
+    padding: 6%; /* Adiciona espaçamento interno */
 }
 
+/* Estilização do formulário */
 form{
-    background: #fff;
-    max-width: 500px;
-    height: 450px;
-    padding: 40px;
-    border-radius: 20px;
+    background: #fff; /* Define o fundo branco */
+    max-width: 500px; /* Define a largura máxima do formulário */
+    height: 450px; /* Define a altura fixa */
+    padding: 40px; /* Adiciona espaçamento interno */
+    border-radius: 20px; /* Arredonda as bordas do formulário */
 }
 
+/* Estilização do título do formulário */
 form h1{
-    text-align: center;
-    margin-bottom: 10px;
-    color: #2D5966;
-    font-size: 22pt;
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 10px; /* Adiciona espaçamento inferior */
+    color: #2D5966; /* Define a cor do texto */
+    font-size: 22pt; /* Define o tamanho da fonte */
 }
 
+/* Estilização dos parágrafos dentro do formulário */
 form p{
-    text-align: center;
-    margin-bottom: 25px;
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 25px; /* Adiciona espaçamento inferior */
 }
 
+/* Configuração dos inputs */
 form .input-single{
-    position: relative;
-    margin: 30px 0;
+    position: relative; /* Define o posicionamento relativo para os elementos filhos */
+    margin: 30px 0; /* Adiciona espaçamento superior e inferior */
 }
 
+/* Estilização dos rótulos dos campos de entrada */
 form .input-single label{
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-    cursor: text;
-    transition: all 0.5s;
-    color: #808080;
+    position: absolute; /* Posiciona o rótulo dentro do input */
+    left: 0; /* Alinha o rótulo à esquerda */
+    bottom: 5px; /* Posiciona o rótulo na parte inferior */
+    cursor: text; /* Define o cursor como de texto ao passar sobre o rótulo */
+    transition: all 0.5s; /* Adiciona uma transição suave */
+    color: #808080; /* Define a cor do rótulo */
 }
 
+/* Estilização dos campos de entrada */
 form .input-single .input{
-    width: 100%;
-    border: 0;
-    border-bottom: 2px solid #808080;
-    padding: 5px;
-    outline: 0;
-    font-size: 16px;
+    width: 100%; /* O input ocupará toda a largura disponível */
+    border: 0; /* Remove a borda padrão */
+    border-bottom: 2px solid #808080; /* Adiciona uma borda inferior */
+    padding: 5px; /* Adiciona espaçamento interno */
+    outline: 0; /* Remove o contorno padrão */
+    font-size: 16px; /* Define o tamanho da fonte */
 }
 
+/* Estilização do input quando estiver em foco (ativo) */
 form .input-single .input:focus{
-    border-bottom: 2px solid #2D5966;
+    border-bottom: 2px solid #2D5966; /* Muda a cor da borda inferior quando selecionado */
 }
 
+/* Animação para o rótulo quando o input estiver em foco ou preenchido */
 form .input-single .input:focus ~ label,
 form .input-single .input:valid ~ label{
-    transform: translateY(-20px);
-    font-size: 12px;
-    color: #2D5966;
+    transform: translateY(-20px); /* Move o rótulo para cima */
+    font-size: 12px; /* Reduz o tamanho do rótulo */
+    color: #2D5966; /* Muda a cor do rótulo */
 }
 
+/* Estilização do botão */
 .btn{
-    width: 100%;
-    text-align: center;
+    width: 100%; /* O botão ocupará toda a largura disponível */
+    text-align: center; /* Centraliza o conteúdo */
 }
 
+/* Estilização do botão de envio do formulário */
 form input[type=submit]{
-    padding: 10px 40px;
-    border: 0;
-    border-radius: 10px;
-    background-color: #2D5966;
-    color: #fff;
-    font-size: 14pt;
-    cursor: pointer;
+    padding: 10px 40px; /* Define espaçamento interno */
+    border: 0; /* Remove a borda */
+    border-radius: 10px; /* Arredonda as bordas */
+    background-color: #2D5966; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto */
+    font-size: 14pt; /* Define o tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
 }
